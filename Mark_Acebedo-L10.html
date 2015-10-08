@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="style-L4.css" />
+  <!-- external css file called "style-L4.css" -->
+  <meta charset="utf-8">
+  <title>Assignment 4</title>
+  <script type="text/javascript" src="change.js"></script>
+  <!-- external js file called "change.js" -->
+</head>
+<body onload="debugMode1();">
+
+  <table width="600" height="190" border="1" align="center">
+    <tr>
+      <td width="250" height="200">
+             <form action="" method="post" enctype="multipart/form-data" name="userData1">
+          <h2><p align="center">if / then / else ...</h2> <!-- if / then / else image on the left -->
+            </p>
+          <p align="center"><img id="imgNumber1" src="zero.gif" align="middle" onclick="changeImg1();" height="130" width="90" />
+          </p>
+          <p align="center"><font size="2">Please enter a number from 1 to 5:</font>&nbsp;
+            <input name="userInput1" id="userInput1" type="text" value="0" size="9" onblur="userText()" />
+          </p>
+        </form>
+
+      </td>
+      <td width="250">
+        <form action="" method="post" enctype="multipart/form-data" name="userData2">
+          <h2><p align="center">Switch Case</p></h2> <!-- Switch Case image on the right -->
+          <p align="center"><img src="zero.gif" align="middle" id="imgNumber2" onClick="changeImg2();" height="130" width="90" /></p>
+            <p align="center"><font size="2">Please enter a number from 1 to 5:</font>&nbsp;
+            <input name="userInput2" id="userInput2" type="text" value="0" size="9" onblur="userText2()" />
+          </p>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+<div>
+    <p id="debugMode" type="button" onclick="debugMode1();" >[ Debug Mode ON ]</p>
+<p id="console"></p></div>
+</body>
+
+</html>
